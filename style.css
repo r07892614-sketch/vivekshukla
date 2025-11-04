@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #00223e, #004e92);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 35px 25px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00d2ff, #ffa751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subs {
+  color: #d4d4d4;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+.contact {
+  color: #ffcc70;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* Info */
+.info {
+  margin: 22px 0;
+  line-height: 1.6;
+}
+.highlight {
+  font-weight: 600;
+  color: #00e0ff;
+  margin-bottom: 6px;
+}
+.link {
+  color: #ffd166;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Timer */
+.timer-box {
+  margin-top: 25px;
+}
+.timer-label {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 6px;
+}
+#countdown {
+  font-size: 3rem;
+  color: #00e0ff;
+  font-weight: 700;
+}
+.sec {
+  color: #bbb;
+}
+
+/* Join Button */
+.join-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00e0ff, #ffd166);
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 42px;
+  border-radius: 50px;
+  margin-top: 18px;
+  font-size: 1.8rem;
+  animation: fadeInOut 1.6s infinite alternate;
+  box-shadow: 0 8px 30px rgba(0, 224, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 40px rgba(255, 209, 102, 0.6);
+}
+
+/* Fade Animation */
+@keyframes fadeInOut {
+  from { opacity: 0.7; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .title { font-size: 1.5rem; }
+  #countdown { font-size: 2.4rem; }
+  .join-btn { padding: 12px 30px; font-size: 1rem; }
+}
